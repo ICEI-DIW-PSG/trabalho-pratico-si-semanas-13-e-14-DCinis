@@ -1,4 +1,3 @@
-// Estrutura de dados dos álbuns do Nirvana
 const albunsData = {
     "destaques": [1, 2, 3],
     "albuns": [
@@ -247,4 +246,7 @@ function loadAlbumDetails() {
 document.addEventListener('DOMContentLoaded', function() {
     loadHomePage();
     loadAlbumDetails();
+    
+
 });
+window.albuns = albunsData.albuns;

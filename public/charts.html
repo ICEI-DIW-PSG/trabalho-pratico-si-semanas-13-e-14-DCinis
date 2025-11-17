@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos - Nirvfana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/charts.js"></script>
+
+</head>
+<body>
+
+<header class="bg-dark text-goldenrod py-3">
+    <div class="container text-center">
+        <h1 class="nirvana-logo mb-0">NIRVFANA</h1>
+        <p class="tagline mb-0">Wiki Fanmade</p>
+    </div>
+</header>
+
+<main class="py-4">
+    <div class="container">
+
+        <h2 class="text-goldenrod mb-4">Gráficos dos Álbuns</h2>
+
+        <div class="bg-light-dark p-4 mb-4 rounded">
+            <h4 class="text-goldenrod">Álbuns por Ano</h4>
+            <canvas id="chartAlbumsByYear"></canvas>
+        </div>
+
+        <div class="bg-light-dark p-4 mb-4 rounded">
+            <h4 class="text-goldenrod">Quantidade de Fotos por Álbum</h4>
+            <canvas id="chartPhotos"></canvas>
+        </div>
+
+        <div class="bg-light-dark p-4 rounded">
+            <h4 class="text-goldenrod">Popularidade (Valor fictício para exemplo)</h4>
+            <canvas id="chartPopularity"></canvas>
+        </div>
+
+    </div>
+</main>
+
+<footer class="bg-dark text-goldenrod py-3 text-center">
+    <div class="container">
+        <p class="mb-0">---</p>
+        <p class="nirvana-logo-footer mb-0">NIRVFANA</p>
+        <p class="mb-0">---</p>
+    </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/charts.js"></script>
+
+</body>
+</html>

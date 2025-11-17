@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Nova Página - Nirvfana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="bg-dark text-goldenrod py-3">
+    <div class="container text-center">
+        <h1 class="nirvana-logo">NIRVFANA</h1>
+        <p class="tagline">Wiki Fanmade</p>
+    </div>
+</header>
+
+<main class="py-4">
+    <div class="container">
+
+        <h2 class="text-goldenrod mb-4">Criar Nova Página</h2>
+
+        <form id="formAddPage" class="bg-light-dark p-4 rounded">
+
+            <label class="form-label text-goldenrod">Nome da Página:</label>
+            <input class="form-control mb-3" id="pageName" required>
+
+            <label class="form-label text-goldenrod">Conteúdo (HTML permitido):</label>
+            <textarea class="form-control mb-3" id="pageContent" rows="6" required></textarea>
+
+            <button class="btn btn-warning w-100">Salvar Página</button>
+
+        </form>
+
+        <p id="status" class="mt-3"></p>
+
+    </div>
+</main>
+
+<footer class="bg-dark text-goldenrod py-3 text-center">
+    <div class="container">
+        <p>---</p>
+        <p class="nirvana-logo-footer">NIRVFANA</p>
+        <p>---</p>
+    </div>
+</footer>
+
+<script>
+document.getElementById("formAddPage").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nome = document.getElementById("pageName").value.trim();
+    const conteudo = document.getElementById("pageContent").value;
+
+    const file = nome.toLowerCase().replace(/\s+/g, "-") + ".html";
+
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>${nome}</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+${conteudo}
+</body>
+</html>`;
+
+    
+    const blob = new Blob([html], { type: "text/html" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = file;
+    a.click();
+
+    document.getElementById("status").innerText = "Página gerada! Arquivo baixado.";
+});
+</script>
+
+</body>
+</html>
