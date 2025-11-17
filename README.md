@@ -9,15 +9,14 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Danylo Cristyan
+- Matricula: 1598438
+- Proposta de projeto escolhida: Fanwiki Nirvana
+- Breve descrição sobre seu projeto: auto explicativo
 
-**Print da tela com a implementação**
+**Print dos testes da API com Postman ou similar**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+prototipo de edição e afins
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
-
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+<img src="public/assets/img/Captura de Tela (30).png" alt="print 1">
+<img src="public/assets/img/Captura de Tela (31).png" alt="print 2">
