@@ -1,0 +1,122 @@
+body {
+    background-color: #000000;
+    background-image: url('https://mcdn.wallpapersafari.com/medium/18/22/nykNtA.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+.text-goldenrod {
+    color: goldenrod !important;
+}
+
+.bg-light-dark {
+    background-color: rgba(24, 24, 24, 0.8) !important;
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.nirvana-logo {
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: goldenrod;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+}
+
+.nirvana-logo-footer {
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.card-album {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid goldenrod;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.card-album:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(218, 165, 32, 0.3);
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #000;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    bottom: 20px;
+}
+
+.album-cover {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    background: #000;
+}
+
+.photo-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #000;
+    border: 1px solid goldenrod;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nirvana-logo {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 250px;
+    }
+    
+    .nirvana-logo {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
